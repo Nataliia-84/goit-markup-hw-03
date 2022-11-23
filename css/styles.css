@@ -150,11 +150,12 @@ margin-left: auto;
 .section.hero{
    text-align: center;
    /* background-color: turquoise; */
-   /* padding-top: 200px; */
-   /* padding-bottom: 200px; */
+   padding-top: 200px;
+   padding-bottom: 200px;
    background-color: var(--color-bgd-one);
    
 }
+
 .conteiner.hero{
     display: block;
     
@@ -197,10 +198,12 @@ margin-left: auto;
     margin-top: 0;
     /* background-color: rgb(250, 246, 242); */
 }
-.main-name{
+.main-name {
     margin-top: 0;
     margin-bottom: 0;
     text-align: center;
+    visibility: hidden;
+    
     
 }
 .conteiner.benefits{
