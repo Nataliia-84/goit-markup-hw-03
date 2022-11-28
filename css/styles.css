@@ -4,12 +4,12 @@
     --text-color: #212121;
     --accent-color-blue: #2196F3;
     --accent-color-white: #FFFFFF;
-    /* --second-color-f: rgba(255, 255, 255, 0.6); */
-    --color-bgd-hero:#2F303A;
+     --color-bgd-hero:#2F303A;
     --color-bgd-second:#F5F4FA;
-    /* --color-bgd-section:#F5F5F5; */
     --color-activ: #188CE8;
-    --color-border:#ECECEC;
+    --color-border:#EEEEEE;
+    /* --card-shadow: 0px, 2px rgba(0, 0, 0, 0.2), 0px, 1px rgba(0, 0, 0, 0.14),  */
+                   /* 0px, 1px rgba(0, 0, 0, 0, 5); */
 
 
 }
@@ -21,6 +21,10 @@ body{
    
 }
 /* початкові дані */
+/* img{ */
+    /* display:block; */
+    /* max-width: 100%; */
+/* } */
 .list {
     list-style: none;
     padding: 0;
@@ -183,6 +187,7 @@ margin-left: auto;
     line-height: 1.88;
     letter-spacing: 0.06em;
     text-align: center;
+    cursor: pointer;
 }
 .button:hover,
 .button:focus{
@@ -197,15 +202,27 @@ margin-left: auto;
     margin-top: 0;
     margin-bottom: 0;
     text-align: center;
-    /* visibility: hidden; */
+    visibility: hidden;
     
     
     
 }
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
 .conteiner.benefits{
 display: block;
-/* padding-top: 94px; */
-/* padding-bottom: 94px; */
+
+
 
 }
 .benefits-title{
@@ -223,7 +240,7 @@ display: block;
     
 }
 .benefits-item{
-    /* width: calc((100%-90px)/4); */
+   
    width: 270px; 
 }
 
@@ -268,8 +285,8 @@ display: block;
 }
 .conteiner.comand{
     display: block;
-    /* padding-top: 94px; */
-    /* padding-bottom: 94px; */
+    
+    
 
 }
 .comand-title{
@@ -287,12 +304,10 @@ display: block;
 }
 .comand-item{
    margin-left: 30px;
-   border: 1px solid var(--accent-color-white);
+   
+   border: 1px solid var(--color-bgd-second);
    border-bottom-left-radius: 4px;
    border-bottom-right-radius: 4px;
-   box-shadow: rgba(0, 0, 0, 0.2);
-   
-
 }
 .comand-name{
     margin-top: 30px;
@@ -302,11 +317,13 @@ display: block;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
+    text-align: center;
 }
 .text-comand{
     margin-bottom: 30px;
     font-size: 16px;
     line-height: 1.18;
+    text-align: center;
     
 }
 /* футер */
@@ -365,10 +382,11 @@ display: block;
    
     
 }
-.menu-title{
-    margin-top: 0;
-    margin-bottom: 0;
-}
+/* .menu-title{ */
+    /* margin-top: 0; */
+    /* margin-bottom: 0; */
+/*     */
+/* } */
 
 .list.menu{
     display: flex;
@@ -429,17 +447,33 @@ display: block;
 .list.blok{
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
-    /* padding-top: 34px; */
-    padding-bottom: 94px;
+
+   
+    margin-right: -30px;
+    margin-top: -30px;
+    
+    
 }
 .blok-item{
-   
-   /* width: calc((100%-60px)/3); */
-   margin: 15px;
+  
+    border: 1px solid var(--color-border);
+    width: calc(100%/3 - 30px);
+    
+    margin-right: 30px;
+    margin-top: 30px;
+    padding: 0;
 }
+
+.link-blok{
+text-decoration: none;
+color: var(--primary-color);
+
+
+
+}
+
 .section.blok .title-list{
-    margin-right: 20px;
+    margin-top: 0px;
     margin-bottom: 9px;
     color: var(--text-color);
 
@@ -447,13 +481,24 @@ display: block;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+
+}
+.blok-text{
+    padding: 20px 24px;
+   
 }
 .section.blok .text-blok{
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 0px;
     font-size: 16px;
     line-height: 1.88;
+    margin-left: 0px;
 }
+
+
+
+
+
 
 
 
